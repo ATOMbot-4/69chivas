@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import LINETCR
-from LINETCR.lib.curve.ttypes import *
+from LINETCR.lib.ttypes import *
 from datetime import datetime
 from bs4 import BeautifulSoup
 #import time, random, sys, re, os, json, subprocess, threading, string, codecs, requests, tweepy, ctypes, urllib, urllib2, wikipedia
@@ -128,23 +128,23 @@ sys.setdefaultencoding('utf-8')
 
 helpMessage ="""
 
-=====꧁U.K_KILLER꧂=====
+=====꧁dika꧂=====
 
 
-〖U,K_SELF COMAND IN GROUP〗
-〖U,K_COMAND GROUP]〗
-〖U,K_COMAND BOT〗
-〖U.K-COMMAND PROTECT〗
+〖dika_SELF COMAND IN GROUP〗
+〖dika_COMAND GROUP]〗
+〖dika_COMAND BOT〗
+〖dika_COMMAND PROTECT〗
 ________________________________________
-̋̾̂͘[ 🇲🇨〖🕉unni͡° ͜ʖ ͡°oppa🕉〗🇲🇨 ] ��✒•┅─────
+[ 🇲🇨〖dika〗🇲🇨 ]
 ________________________________________
 """
 
 inGroupMessage ="""
 
-=====꧁U.K_KILLER꧂=====
+=====꧁dika꧂=====
 _______________________________________
-〖U,K_SELF COMAND IN GROUP〗
+〖dika_SELF COMAND IN GROUP〗
 _______________________________________
 
 �❂͜͡🇲🇨➣ Me
@@ -170,16 +170,16 @@ _______________________________________
 �❂͜͡🇲🇨➣ Gbroadcast text
 �❂͜͡🇲🇨➣ Reject
 ________________________________________
-̋̾̂[ 🇲🇨〖🕉unni͡° ͜ʖ ͡°oppa🕉〗🇲🇨 ] ��✒•┅─────
+[ 🇲🇨〖dika〗🇲🇨 ]
 ________________________________________
 """
 
 
 groupMessage ="""
 
-=====꧁U.K_KILLER꧂=====
+=====꧁dika꧂=====
 ________________________________________
-〖U,K_COMAND GROUP]〗
+〖dika_COMAND GROUP]〗
 ________________________________________
 �❂͜͡🕵️➣ Creator
 �❂͜͡🕵️➣ Gn: text
@@ -244,16 +244,16 @@ ________________________________________
 �❂͜͡🕵️➣ Tr-Ar = Arabia
 �❂͜͡🕵️➣ Tr-Hy = armenian
 _______________________________________
-[ 🇲🇨〖🕉unni͡° ͜ʖ ͡°oppa🕉〗🇲🇨 ] ��✒•┅─────
+[ 🇲🇨〖dika〗🇲🇨 ]
 _______________________________________
 """
 
 botMessage ="""
 
 
-=====꧁U.K_KILLER꧂=====
+=====꧁dika꧂=====
 ______________________________________
-〖U,K_COMAND BOT〗
+〖dika_COMAND BOT〗
 ______________________________________
 �❂͜͡🇲🇨➣🕵️ Ybot
 �❂͜͡🇲🇨➣🕵️ Ycancel
@@ -273,22 +273,22 @@ ______________________________________
 �❂͜͡🇲🇨➣🕵️ Y1-Y5 bye
 �❂͜͡🇲🇨➣🕵️ Y1-Y2 link on/off
 _______________________________________
-̋̾̂͘[ 🇲🇨〖🕉unni͡° ͜ʖ ͡°oppa🕉〗🇲🇨 ] ��✒•┅─────
+dika[ 🇲🇨〖dika〗🇲🇨 ]
 _______________________________________
 """
 
 
 protectMessage ="""
 
-=====꧁U.K_KILLER꧂=====
+=====꧁dika꧂=====
 ______________________________________
-〖U.K-COMMAND PROTRET〗
+〖dika_COMMAND PROTRET〗
 ______________________________________
-꧁U.K_KILLER꧂ AutoKick on/off
-꧁U.K_KILLER꧂ Namelock On/off
-꧁U.K_KILLER꧂ Mode on
+꧁dika꧂ AutoKick on/off
+꧁dika꧂ Namelock On/off
+꧁dika꧂ Mode on
 ______________________________________
-̨̻̪͓̦̋̾̂̽̎͜͜[ 🇲🇨〖🕉unni͡° ͜ʖ ͡°oppa🕉〗🇲🇨 ] ��✒•┅───── 
+🇲🇨〖dika〗🇲🇨 ] 
 ______________________________________
 """
 
@@ -333,10 +333,10 @@ wait = {
     'leaveRoom':False,
     'timeline':True,
     'autoAdd':False,
-    'message':"Thanks for add Me MY 💋🕉unni͡° ͜ʖ ͡°oppa🕉✒",
+    'message':"Thanks for add Me MY dika✒",
     'copy':False,
     "lang":"JP",
-    "comment":"AutoLike by 💋🕉unni͡° ͜ʖ ͡°oppa🕉✒",
+    "comment":"AutoLike by dika✒",
     "commentOn":True,
     "commentBlack":{},
     "wblack":False,
