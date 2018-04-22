@@ -4,7 +4,7 @@ import LINETCR
 from LINETCR.lib.ttypes import *
 from datetime import datetime
 from bs4 import BeautifulSoup
-#import time, random, sys, re, os, json, subprocess, threading, string, codecs, requests, tweepy, ctypes, urllib, urllib2, wikipedia
+import time, random, sys, re, os, json, subprocess, threading, string, codecs, requests, tweepy, ctypes, urllib, urllib2, wikipedia
 import time, random, sys, re, os, json, subprocess, threading, string, codecs, requests, tweepy, ctypes, urllib, urllib2, wikipedia,tempfile,glob,shutil,unicodedata,goslate
 from gtts import gTTS
 import requests
@@ -25,103 +25,103 @@ from random import randint
 from googletrans import Translator
 import time,random,sys,json,codecs,threading,glob,re
 
-#cl = LINETCR.LINE()
+cl = LINETCR.LINE()
 #cl.login(qr=True)
-#cl.login(token="En4KG8n3Axy1dVdjTgBe.F6loN/ws9FaPqFRwqoggJG.jqx0KH2ZLBv5JNpxSPnPE/ACr/7lvOjqYZLvrRB5aEY=")
-#cl.loginResult()
+cl.login(token="En4KG8n3Axy1dVdjTgBe.F6loN/ws9FaPqFRwqoggJG.jqx0KH2ZLBv5JNpxSPnPE/ACr/7lvOjqYZLvrRB5aEY=")
+cl.loginResult()
 
 
-#ki = LINETCR.LINE()
+ki = LINETCR.LINE()
 #ki.login(qr=True)
-#ki.login(token="Enmz3AeffNs6Jm9bjdO3.BYv5MSepCurmE04bZMOzaW.C+hWn+qQhF6gP36//9Tcx78HyogXy5DEZ/vK+TS33i0=")
-#ki.loginResult()
+ki.login(token="Enmz3AeffNs6Jm9bjdO3.BYv5MSepCurmE04bZMOzaW.C+hWn+qQhF6gP36//9Tcx78HyogXy5DEZ/vK+TS33i0=")
+ki.loginResult()
 
-#kk = LINETCR.LINE()
+kk = LINETCR.LINE()
 #kk.login(qr=True)
-#kk.login(token="EnD6uojittnb5qqLeEt3.9qPM7NC2vWiRtQTZ/x4SyW.YlhswTQVUjF2mE1Pxg+0goaUHbC6KsjhL7PJUkQ9jqc=")
-#kk.loginResult()
+kk.login(token="EnD6uojittnb5qqLeEt3.9qPM7NC2vWiRtQTZ/x4SyW.YlhswTQVUjF2mE1Pxg+0goaUHbC6KsjhL7PJUkQ9jqc=")
+kk.loginResult()
 
-#kc = LINETCR.LINE()
+kc = LINETCR.LINE()
 #kc.login(qr=True)
-#kc.login(token="EnbwtB4NdqZee7Z4dqb8.usk2DxruRb2/eg2IYrqXsa.GXNGIGGPMRMtNQMn/Yej3RCpDp3xiTPcg27NMYjlFRM=")
-#kc.loginResult()
+kc.login(token="EnbwtB4NdqZee7Z4dqb8.usk2DxruRb2/eg2IYrqXsa.GXNGIGGPMRMtNQMn/Yej3RCpDp3xiTPcg27NMYjlFRM=")
+kc.loginResult()
 
-#kd = LINETCR.LINE()
+kd = LINETCR.LINE()
 #kd.login(qr=True)
-#kd.login(token="Enmz3AeffNs6Jm9bjdO3.BYv5MSepCurmE04bZMOzaW.C+hWn+qQhF6gP36//9Tcx78HyogXy5DEZ/vK+TS33i0=")
-#kd.loginResult()
+kd.login(token="Enmz3AeffNs6Jm9bjdO3.BYv5MSepCurmE04bZMOzaW.C+hWn+qQhF6gP36//9Tcx78HyogXy5DEZ/vK+TS33i0=")
+kd.loginResult()
 
-#ke = LINETCR.LINE()
+ke = LINETCR.LINE()
 #ke.login(qr=True)
-#ke.login(token="EnOtD6mnAa3VbT7ckdJc.aYbkAqXV5gf9Eu4MbqlVBa.SKr19sZLlKHExBdDvCO+Xi1MUYzs53wryO28bRdijn4=")
-#ke.loginResult()
+ke.login(token="EnOtD6mnAa3VbT7ckdJc.aYbkAqXV5gf9Eu4MbqlVBa.SKr19sZLlKHExBdDvCO+Xi1MUYzs53wryO28bRdijn4=")
+ke.loginResult()
 
-#kf = LINETCR.LINE()
+kf = LINETCR.LINE()
 #kf.login(qr=True)
-#kf.login(token="EnglcDa00DaCXyAhkub8.MQvnSQmxLZyecm+cYLEska.B6wvaPOUvoO6TeJ/HSLoduT08oL/Lp+Ts9/qyNtXnv0=")
-#kf.loginResult()
+kf.login(token="EnglcDa00DaCXyAhkub8.MQvnSQmxLZyecm+cYLEska.B6wvaPOUvoO6TeJ/HSLoduT08oL/Lp+Ts9/qyNtXnv0=")
+kf.loginResult()
 
-#kg = LINETCR.LINE()
+kg = LINETCR.LINE()
 #kg.login(qr=True)
-#kg.login(token="EnheqLhJWfoutaO6Il24.PwzfHga0YXE729Rxwc5qXa.IJUzESsyxMMtwXP2VLxYHYt2gDcjzLA3+UWzI7nDDmE=")
-#kg.loginResult()
+kg.login(token="EnheqLhJWfoutaO6Il24.PwzfHga0YXE729Rxwc5qXa.IJUzESsyxMMtwXP2VLxYHYt2gDcjzLA3+UWzI7nDDmE=")
+kg.loginResult()
 
-#kh = LINETCR.LINE()
+kh = LINETCR.LINE()
 #kh.login(qr=True)
-#kh.login(token="EnTqV2MY9zSyjnly3PR0.X7ONBO4L4YtA49fO3i6lua.30yYOYb5UU3tY3HibpO/VCTyxwWCxXmC5hZWEYxgsHg=")
-#kh.loginResult()
+kh.login(token="EnTqV2MY9zSyjnly3PR0.X7ONBO4L4YtA49fO3i6lua.30yYOYb5UU3tY3HibpO/VCTyxwWCxXmC5hZWEYxgsHg=")
+kh.loginResult()
 
-#kj = LINETCR.LINE()
+kj = LINETCR.LINE()
 #kj.login(qr=True)
-#kj.login(token="EnNNnOcUUuDnBDq04Trf.oVwyNFPWGPJZC00RELiFVW.vBO5ZPqdRgnOlV7pZukedMqNalSdBS463cKRWLPsDnI=")
-#kj.loginResult()
+kj.login(token="EnNNnOcUUuDnBDq04Trf.oVwyNFPWGPJZC00RELiFVW.vBO5ZPqdRgnOlV7pZukedMqNalSdBS463cKRWLPsDnI=")
+kj.loginResult()
 
-#kl = LINETCR.LINE()
+kl = LINETCR.LINE()
 #kl.login(qr=True)
-#kl.login(token="EnwpfuLGXqIZrkL7m7Aa.4873flXX7QJRw4jo2j7roG.jRjCAigm/xA35AtuxFXs70tLf2F53B9juFI/UOciCKo=")
-#kl.loginResult()
+kl.login(token="EnwpfuLGXqIZrkL7m7Aa.4873flXX7QJRw4jo2j7roG.jRjCAigm/xA35AtuxFXs70tLf2F53B9juFI/UOciCKo=")
+kl.loginResult()
 
-#km = LINETCR.LINE()
+km = LINETCR.LINE()
 #km.login(qr=True)
-#km.login(token="EnoyYxUZB5Xv7Bl9Ys57.KN6gqRyZQ0iuRiU5jNIj1W.SxC9+Q+ahlwaT+Wz124+tfYzek6HekkdDDqbipYbLrw=")
-#km.loginResult()
+km.login(token="EnoyYxUZB5Xv7Bl9Ys57.KN6gqRyZQ0iuRiU5jNIj1W.SxC9+Q+ahlwaT+Wz124+tfYzek6HekkdDDqbipYbLrw=")
+km.loginResult()
 
-#kn = LINETCR.LINE()
+kn = LINETCR.LINE()
 #kn.login(qr=True)
-#kn.login(token="EnoktyaoHcLmCOmoVVq6.xkaL7HAdfdzB4bRIIC04jG.JnqJCQGBclHgL1/eqGsHb9zzylxKDlolWsYUqED9OlU=")
-#kn.loginResult()
+kn.login(token="EnoktyaoHcLmCOmoVVq6.xkaL7HAdfdzB4bRIIC04jG.JnqJCQGBclHgL1/eqGsHb9zzylxKDlolWsYUqED9OlU=")
+kn.loginResult()
 
-#ko = LINETCR.LINE()
+ko = LINETCR.LINE()
 #ko.login(qr=True)
-#ko.login(token="EnwrWLZ64U29Sqha0vre.9lU+Lm8IEAdBW1wrKZGG7G.4Frg+d66MCO+zH3Me73RzaA7WdBFP94nzn8m28O6luI=")
-#ko.loginResult()
+ko.login(token="EnwrWLZ64U29Sqha0vre.9lU+Lm8IEAdBW1wrKZGG7G.4Frg+d66MCO+zH3Me73RzaA7WdBFP94nzn8m28O6luI=")
+ko.loginResult()
 
-#cl = LINETCR.LINE()
+cl = LINETCR.LINE()
 #kp.login(qr=True)
-#cl.login(token="EnwOOwOK4e4Uyu5uyXBa.am5VEhHU3Oh3X2olVwx66G.mQ5Hs2DVNitNFLNKm5INJzlDELTBEm1GhfrcVc2ibsk=")
-#cl.loginResult()
+cl.login(token="EnwOOwOK4e4Uyu5uyXBa.am5VEhHU3Oh3X2olVwx66G.mQ5Hs2DVNitNFLNKm5INJzlDELTBEm1GhfrcVc2ibsk=")
+cl.loginResult()
 
-#kq = LINETCR.LINE()
+kq = LINETCR.LINE()
 #kq.login(qr=True)
-#kq.login(token="EniBgK2GUXPoANVBfKpb.tyEjT4SUhBFf7gJV34m+gW.X7qZpyneaItMRP8s+alxBMkzQCtGu/j19Xok/k9/9fA=")
-#kq.loginResult()
+kq.login(token="EniBgK2GUXPoANVBfKpb.tyEjT4SUhBFf7gJV34m+gW.X7qZpyneaItMRP8s+alxBMkzQCtGu/j19Xok/k9/9fA=")
+kq.loginResult()
 
 cl = LINETCR.LINE()
 #kr.login(qr=True)
 cl.login(token="EngqjAX9djgqsY8BVCOc.cTXHQLZwcjas2Whcxxlhda./6K1IVcI3KrpoWRMMhrBsjbsUPQeQit9hrCTyA0C/Hc=")
 cl.loginResult()
 
-#ks = LINETCR.LINE()
+ks = LINETCR.LINE()
 #ks.login(qr=True)
-#ks.login(token="EnWTfMjpKM0WOkCUDHD4.srjUosW4RgcA0sSjVMH6Ta.Nd374H7hPFi71iCeupORD5lXrCG+Y2j+7xzG8CZHddQ=")
-#ks.loginResult()
+ks.login(token="EnWTfMjpKM0WOkCUDHD4.srjUosW4RgcA0sSjVMH6Ta.Nd374H7hPFi71iCeupORD5lXrCG+Y2j+7xzG8CZHddQ=")
+ks.loginResult()
 
-#kt = LINETCR.LINE()
+kt = LINETCR.LINE()
 #kt.login(qr=True)
-#kt.login(token="EnoemlXBtIWaRpxaCEc7.OS/hbTH5Iz2F5McUPTGhfW.b02+CcT2Ell/OZkgzJrKIwuFSWh1vPiM9bDw+YRVpIY=")
-#kt.loginResult()
+kt.login(token="EnoemlXBtIWaRpxaCEc7.OS/hbTH5Iz2F5McUPTGhfW.b02+CcT2Ell/OZkgzJrKIwuFSWh1vPiM9bDw+YRVpIY=")
+kt.loginResult()
 
-print "U.k kalem Bot"
+print "dika Bot"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
@@ -255,23 +255,23 @@ botMessage ="""
 ______________________________________
 〖dika_COMAND BOT〗
 ______________________________________
-�❂͜͡🇲🇨➣🕵️ Ybot
-�❂͜͡🇲🇨➣🕵️ Ycancel
-�❂͜͡🇲🇨➣🕵️ Y1-Y18 Contact Bot
-�❂͜͡🇲🇨➣🕵️ Y1-Y2 tl:
-�❂͜͡🇲🇨➣🕵️ Y1-Y2 say
-�❂͜͡🇲🇨➣🕵️ Y1-Y2 tag
-�❂͜͡🇲🇨➣🕵️ Y1-Y2 invite:
-�❂͜͡🇲🇨➣🕵️ Y1-Y3 mid
-�❂͜͡🇲🇨➣🕵️ Y1-Y2 gurl
-�❂͜͡🇲🇨➣🕵️ Y1-Y5 gift
-�❂͜͡🇲🇨➣🕵️ Y1-Y18 rename:
+�❂͜͡🇲🇨➣🕵️ dikabot
+�❂͜͡🇲🇨➣🕵️ cancel
+�❂͜͡🇲🇨➣🕵️ d1-d18 Contact Bot
+�❂͜͡🇲🇨➣🕵️ d1-d2 tl:
+�❂͜͡🇲🇨➣🕵️ d1-d2 say
+�❂͜͡🇲🇨➣🕵️ d1-d2 tag
+�❂͜͡🇲🇨➣🕵️ d1-d2 invite:
+�❂͜͡🇲🇨➣🕵️ d1-d3 mid
+�❂͜͡🇲🇨➣🕵️ d1-d2 gurl
+�❂͜͡🇲🇨➣🕵️ d1-d5 gift
+�❂͜͡🇲🇨➣🕵️ d1-d18 rename:
 �❂͜͡🇲🇨➣🕵️ All: rename all:
 �❂͜͡🇲🇨➣🕵️ Allbio: Isi bio:
-�❂͜͡🇲🇨➣🕵️ Y1-Y10 rgroup
-�❂͜͡🇲🇨➣🕵️ Y1-Y5 join
-�❂͜͡🇲🇨➣🕵️ Y1-Y5 bye
-�❂͜͡🇲🇨➣🕵️ Y1-Y2 link on/off
+�❂͜͡🇲🇨➣🕵️ d1-d10 rgroup
+�❂͜͡🇲🇨➣🕵️ d1-d5 join
+�❂͜͡🇲🇨➣🕵️ d1-d5 bye
+�❂͜͡🇲🇨➣🕵️ d1-d2 link on/off
 _______________________________________
 dika[ 🇲🇨〖dika〗🇲🇨 ]
 _______________________________________
@@ -295,24 +295,24 @@ ______________________________________
 
 KAC=[cl]
 mid = cl.getProfile().mid
-#Amid = ki.getProfile().mid
-#Bmid = kk.getProfile().mid
-#Cmid = kc.getProfile().mid
-#Dmid = kd.getProfile().mid
-#Emid = ke.getProfile().mid
-#Fmid = kf.getProfile().mid
-#Gmid = kg.getProfile().mid
-#Hmid = kh.getProfile().mid
-#Jmid = kj.getProfile().mid
-#Lmid = kl.getProfile().mid
-#Mmid = km.getProfile().mid
-#Nmid = kn.getProfile().mid
-#Omid = ko.getProfile().mid
-#Pmid = kp.getProfile().mid
-#Qmid = kq.getProfile().mid
-#Rmid = kr.getProfile().mid
-#Smid = ks.getProfile().mid
-#Tmid = kt.getProfile().mid
+Amid = ki.getProfile().mid
+Bmid = kk.getProfile().mid
+Cmid = kc.getProfile().mid
+Dmid = kd.getProfile().mid
+Emid = ke.getProfile().mid
+Fmid = kf.getProfile().mid
+Gmid = kg.getProfile().mid
+Hmid = kh.getProfile().mid
+Jmid = kj.getProfile().mid
+Lmid = kl.getProfile().mid
+Mmid = km.getProfile().mid
+Nmid = kn.getProfile().mid
+Omid = ko.getProfile().mid
+Pmid = kp.getProfile().mid
+Qmid = kq.getProfile().mid
+Rmid = kr.getProfile().mid
+Smid = ks.getProfile().mid
+Tmid = kt.getProfile().mid
 protectname = []
 protecturl = []
 protection = []
@@ -2540,75 +2540,75 @@ def bot(op):
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': mid}
                 cl.sendMessage(msg)
-            elif "Y1" == msg.text:
+            elif "d1" == msg.text:
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': Amid}
                 ki.sendMessage(msg)
-            elif "Y2" == msg.text:
+            elif "d2" == msg.text:
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': Bmid}
                 kk.sendMessage(msg)
-            elif "Y3" == msg.text:
+            elif "d3" == msg.text:
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': Cmid}
                 kc.sendMessage(msg)
-            elif "Y4" == msg.text:
+            elif "d4" == msg.text:
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': Dmid}
                 kd.sendMessage(msg)
-            elif "Y5" == msg.text:
+            elif "d5" == msg.text:
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': Emid}
                 ke.sendMessage(msg)
-            elif "Y6" == msg.text:
+            elif "d6" == msg.text:
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': Fmid}
                 kf.sendMessage(msg)
-            elif "Y7" == msg.text:
+            elif "d7" == msg.text:
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': Gmid}
                 kg.sendMessage(msg)
-            elif "Y8" == msg.text:
+            elif "d8" == msg.text:
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': Hmid}
                 kh.sendMessage(msg)
-            elif "Y9" == msg.text:
+            elif "d9" == msg.text:
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': Jmid}
                 kj.sendMessage(msg)
-            elif "Y10" == msg.text:
+            elif "d10" == msg.text:
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': Lmid}
                 kl.sendMessage(msg)
-            elif "Y11" == msg.text:
+            elif "d11" == msg.text:
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': Mmid}
                 km.sendMessage(msg)
-            elif "Y12" == msg.text:
+            elif "d12" == msg.text:
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': Nmid}
                 kn.sendMessage(msg)
-            elif "Y13" == msg.text:
+            elif "d13" == msg.text:
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': Omid}
                 ko.sendMessage(msg)
-            elif "Y14" == msg.text:
+            elif "d14" == msg.text:
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': Pmid}
                 kp.sendMessage(msg)
-            elif "Y15" == msg.text:
+            elif "d15" == msg.text:
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': Qmid}
                 kq.sendMessage(msg)
-            elif "Y16" == msg.text:
+            elif "d16" == msg.text:
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': Rmid}
                 kr.sendMessage(msg)
-            elif "Y17" == msg.text:
+            elif "d17" == msg.text:
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': Smid}
                 ks.sendMessage(msg)
-            elif "Y18" == msg.text:
+            elif "d18" == msg.text:
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': Tmid}
                 kt.sendMessage(msg)
@@ -2618,27 +2618,27 @@ def bot(op):
                 msg.contentMetadata={'PRDID': 'a0768339-c2d3-4189-9653-2909e9bb6f58', 'PRDTYPE': 'THEME', 'MSGTPL': '1'}
                 msg.text = None
                 cl.sendMessage(msg)
-            elif msg.text in ["Y1 gift","Y1gift"]:
+            elif msg.text in ["d1 gift","d1gift"]:
                 msg.contentType = 9
                 msg.contentMetadata={'PRDID': 'a0768339-c2d3-4189-9653-2909e9bb6f58', 'PRDTYPE': 'THEME', 'MSGTPL': '2'}
                 msg.text = None
                 ki.sendMessage(msg)
-            elif msg.text in ["Y2 gift","Y2gift"]:
+            elif msg.text in ["d2 gift","d2gift"]:
                 msg.contentType = 9
                 msg.contentMetadata={'PRDID': 'a0768339-c2d3-4189-9653-2909e9bb6f58', 'PRDTYPE': 'THEME', 'MSGTPL': '3'}
                 msg.text = None
                 kk.sendMessage(msg)
-            elif msg.text in ["Y3 gift","Y3gift"]:
+            elif msg.text in ["d3 gift","d3gift"]:
                 msg.contentType = 9
                 msg.contentMetadata={'PRDID': 'a0768339-c2d3-4189-9653-2909e9bb6f58', 'PRDTYPE': 'THEME', 'MSGTPL': '4'}
                 msg.text = None
                 kc.sendMessage(msg)
-            elif msg.text in ["Y4 gift","Y4gift"]:
+            elif msg.text in ["d4 gift","d4gift"]:
                 msg.contentType = 9
                 msg.contentMetadata={'PRDID': 'a0768339-c2d3-4189-9653-2909e9bb6f58', 'PRDTYPE': 'THEME', 'MSGTPL': '5'}
                 msg.text = None
                 kd.sendMessage(msg)
-            elif msg.text in ["Y5 gift","Y5gift"]:
+            elif msg.text in ["d5 gift","d5gift"]:
                 msg.contentType = 9
                 msg.contentMetadata={'PRDID': 'a0768339-c2d3-4189-9653-2909e9bb6f58', 'PRDTYPE': 'THEME', 'MSGTPL': '6'}
                 msg.text = None
@@ -3038,7 +3038,7 @@ def bot(op):
                         uye.sendText(msg.to,"Can not be used outside the group")
                     else:
                         uye.sendText(msg.to,"Not for use less than group")
-            elif msg.text in ["Y1 link off"]:
+            elif msg.text in ["d1 link off"]:
                 if msg.toType == 2:
                     X = ki.getGroup(msg.to)
                     X.preventJoinByTicket = True
@@ -3305,10 +3305,10 @@ def bot(op):
 				ks.sendText(msg.to,(bctxt))
 				kt.sendText(msg.to,(bctxt))
             elif "Y1 say " in msg.text:
-				saytxt = msg.text.replace("Y1 say ","")
+				saytxt = msg.text.replace("d1 say ","")
 				ki.sendText(msg.to,(saytxt))
             elif "Y2 say " in msg.text:
-				saytext = msg.text.replace("Y2 say ","")
+				saytext = msg.text.replace("d2 say ","")
 				kk.sendText(msg.to,(saytext))
                 
 #======================================
@@ -3420,137 +3420,137 @@ def bot(op):
                     profile = cl.getProfile()
                     profile.displayName = string
                     cl.updateProfile(profile)
-                    cl.sendText(msg.to,"Name " + string + " Done Bosqu")
+                    cl.sendText(msg.to,"Name " + string + " Dika Done")
             elif msg.text in ["Invite:on"]:
             	if msg.from_ in admin:
                  wait["winvite"] = True
                  cl.sendText(msg.to,"send contact")
             elif "Y1 rename: " in msg.text:
-                string = msg.text.replace("Y1 rename: ","")
+                string = msg.text.replace("d1 rename: ","")
                 if len(string.decode('utf-8')) <= 20:
                     profile_B = ki.getProfile()
                     profile_B.displayName = string
                     ki.updateProfile(profile_B)
-                    ki.sendText(msg.to,"Name " + string + " Done Bosqu")
+                    ki.sendText(msg.to,"Name " + string + " Dika Done")
             elif "Y2 rename: " in msg.text:
-                string = msg.text.replace("Y2 rename: ","")
+                string = msg.text.replace("d2 rename: ","")
                 if len(string.decode('utf-8')) <= 20:
                     profile_B = kk.getProfile()
                     profile_B.displayName = string
                     kk.updateProfile(profile_B)
-                    kk.sendText(msg.to,"Name " + string + " Done Bosqu")
+                    kk.sendText(msg.to,"Name " + string + " Dika Done")
             elif "Y3 rename: " in msg.text:
-                string = msg.text.replace("Y3 rename: ","")
+                string = msg.text.replace("d3 rename: ","")
                 if len(string.decode('utf-8')) <= 20:
                     profile_B = kc.getProfile()
                     profile_B.displayName = string
                     kc.updateProfile(profile_B)
-                    kc.sendText(msg.to,"Name " + string + " Done Bosqu")
+                    kc.sendText(msg.to,"Name " + string + " Dika Done")
             elif "Y4 rename: " in msg.text:
-                string = msg.text.replace("Y4 rename: ","")
+                string = msg.text.replace("d4 rename: ","")
                 if len(string.decode('utf-8')) <= 20:
                     profile_B = kd.getProfile()
                     profile_B.displayName = string
                     kd.updateProfile(profile_B)
-                    kd.sendText(msg.to,"Name " + string + " Done Bosqu")
+                    kd.sendText(msg.to,"Name " + string + " Dika Done")
             elif "Y5 rename: " in msg.text:
-                string = msg.text.replace("Y5 rename: ","")
+                string = msg.text.replace("d5 rename: ","")
                 if len(string.decode('utf-8')) <= 20:
                     profile_B = ke.getProfile()
                     profile_B.displayName = string
                     ke.updateProfile(profile_B)
-                    ke.sendText(msg.to,"Name " + string + " Done Bosqu")
+                    ke.sendText(msg.to,"Name " + string + " Dika Done")
             elif "Y6 rename: " in msg.text:
-                string = msg.text.replace("Y6 rename: ","")
+                string = msg.text.replace("d6 rename: ","")
                 if len(string.decode('utf-8')) <= 20:
                     profile_B = kf.getProfile()
                     profile_B.displayName = string
                     kf.updateProfile(profile_B)
-                    kf.sendText(msg.to,"Name " + string + " Done Bosqu")
+                    kf.sendText(msg.to,"Name " + string + " Dika Done")
             elif "Y7 rename: " in msg.text:
-                string = msg.text.replace("Y7 rename: ","")
+                string = msg.text.replace("d7 rename: ","")
                 if len(string.decode('utf-8')) <= 20:
                     profile_B = kg.getProfile()
                     profile_B.displayName = string
                     kg.updateProfile(profile_B)
-                    kg.sendText(msg.to,"Name " + string + " Done Bosqu")
+                    kg.sendText(msg.to,"Name " + string + " Dika Done")
             elif "Y8 rename: " in msg.text:
-                string = msg.text.replace("Y8 rename: ","")
+                string = msg.text.replace("d8 rename: ","")
                 if len(string.decode('utf-8')) <= 20:
                     profile_B = kh.getProfile()
                     profile_B.displayName = string
                     kh.updateProfile(profile_B)
-                    kh.sendText(msg.to,"Name " + string + " Done Bosqu")
+                    kh.sendText(msg.to,"Name " + string + " Dika Done")
             elif "Y9 rename: " in msg.text:
-                string = msg.text.replace("Y9 rename: ","")
+                string = msg.text.replace("d9 rename: ","")
                 if len(string.decode('utf-8')) <= 20:
                     profile_B = kj.getProfile()
                     profile_B.displayName = string
                     kj.updateProfile(profile_B)
-                    kj.sendText(msg.to,"Name " + string + " Done Bosqu")
+                    kj.sendText(msg.to,"Name " + string + " Dika Done")
             elif "Y10 rename: " in msg.text:
-                string = msg.text.replace("Y10 rename: ","")
+                string = msg.text.replace("d10 rename: ","")
                 if len(string.decode('utf-8')) <= 20:
                     profile_B = kl.getProfile()
                     profile_B.displayName = string
                     kl.updateProfile(profile_B)
-                    kl.sendText(msg.to,"Name " + string + " Done Bosqu")                                
+                    kl.sendText(msg.to,"Name " + string + " Dika Done")                                
             elif "Y11 rename: " in msg.text:
-                string = msg.text.replace("Y11 rename: ","")
+                string = msg.text.replace("d11 rename: ","")
                 if len(string.decode('utf-8')) <= 20:
                     profile_B = km.getProfile()
                     profile_B.displayName = string
                     km.updateProfile(profile_B)
-                    km.sendText(msg.to,"Name " + string + " Done Bosqu")                                
+                    km.sendText(msg.to,"Name " + string + " Dika Done")                                
             elif "Y12 rename: " in msg.text:
-                string = msg.text.replace("Y2 rename: ","")
+                string = msg.text.replace("d12 rename: ","")
                 if len(string.decode('utf-8')) <= 20:
                     profile_B = kn.getProfile()
                     profile_B.displayName = string
                     kn.updateProfile(profile_B)
-                    kn.sendText(msg.to,"Name " + string + " Done Bosqu")
+                    kn.sendText(msg.to,"Name " + string + " Dika Done")
             elif "Y13 rename: " in msg.text:
-                string = msg.text.replace("Y13 rename: ","")
+                string = msg.text.replace("d13 rename: ","")
                 if len(string.decode('utf-8')) <= 20:
                     profile_B = ko.getProfile()
                     profile_B.displayName = string
                     ko.updateProfile(profile_B)
-                    ko.sendText(msg.to,"Name " + string + " Done Bosqu")
+                    ko.sendText(msg.to,"Name " + string + " Dika Done")
             elif "Y14 rename: " in msg.text:
-                string = msg.text.replace("Y14 rename: ","")
+                string = msg.text.replace("d14 rename: ","")
                 if len(string.decode('utf-8')) <= 20:
                     profile_B = kp.getProfile()
                     profile_B.displayName = string
                     kp.updateProfile(profile_B)
-                    kp.sendText(msg.to,"Name " + string + " Done Bosqu")
+                    kp.sendText(msg.to,"Name " + string + " Dika Done")
             elif "Y15 rename: " in msg.text:
-                string = msg.text.replace("Y15 rename: ","")
+                string = msg.text.replace("d15 rename: ","")
                 if len(string.decode('utf-8')) <= 20:
                     profile_B = kq.getProfile()
                     profile_B.displayName = string
                     kq.updateProfile(profile_B)
-                    kq.sendText(msg.to,"Name " + string + " Done Bosqu")
+                    kq.sendText(msg.to,"Name " + string + " Dika Done")
             elif "Y16 rename: " in msg.text:
-                string = msg.text.replace("Y16 rename: ","")
+                string = msg.text.replace("d16 rename: ","")
                 if len(string.decode('utf-8')) <= 20:
                     profile_B = kr.getProfile()
                     profile_B.displayName = string
                     kr.updateProfile(profile_B)
-                    kr.sendText(msg.to,"Name " + string + " Done Bosqu")
+                    kr.sendText(msg.to,"Name " + string + " Dika Done")
             elif "Y17 rename: " in msg.text:
-                string = msg.text.replace("Y17 rename: ","")
+                string = msg.text.replace("d17 rename: ","")
                 if len(string.decode('utf-8')) <= 20:
                     profile_B = ks.getProfile()
                     profile_B.displayName = string
                     ks.updateProfile(profile_B)
-                    ks.sendText(msg.to,"Name " + string + " Done Bosqu")
+                    ks.sendText(msg.to,"Name " + string + " Dika Done")
             elif "Y18 rename: " in msg.text:
-                string = msg.text.replace("Y18 rename: ","")
+                string = msg.text.replace("d18 rename: ","")
                 if len(string.decode('utf-8')) <= 20:
                     profile_B = kt.getProfile()
                     profile_B.displayName = string
                     kt.updateProfile(profile_B)
-                    kt.sendText(msg.to,"Name " + string + " Done Bosqu")
+                    kt.sendText(msg.to,"Name " + string + " Dika Done")
             elif "Mc " in msg.text:
                 key = eval(msg.contentMetadata["MENTION"])
                 key1 = key["MENTIONEES"][0]["M"]
@@ -3791,7 +3791,7 @@ def bot(op):
                     cl.sendText(msg.to,"Semua Spam Undangan Telah Di Tolak")
                 else:
                     cl.sendText(msg.to,"拒绝了全部的邀请。")
-            elif msg.text in ["Y1 rgroups","Y1 rgroup"]:
+            elif msg.text in ["d1 rgroups","d1 rgroup"]:
                 gid = ki.getGroupIdsInvited()
                 for i in gid:
                     ki.rejectGroupInvitation(i)
@@ -4121,7 +4121,7 @@ def bot(op):
                     ki.sendText(msg.to,"Not for use less than group")
             elif "Y2 gurl: " in msg.text:
                 if msg.toType == 2:
-                    gid = msg.text.replace("Y2 gurl: ","")
+                    gid = msg.text.replace("d2 gurl: ","")
                     x = kk.getGroup(gid)
                     if x.preventJoinByTicket == True:
                         x.preventJoinByTicket = False
@@ -4237,7 +4237,7 @@ def bot(op):
                         if _name == g.displayName:
                             targets.append(g.mid)
                     if targets == []:
-                        cl.sendText(msg.to,"Gak da orange")
+                        cl.sendText(msg.to,"Gak da orangnya")
                     else:
                         for target in targets:
                             try:
@@ -4552,7 +4552,7 @@ def bot(op):
                 cl.sendText(msg.to,"وَعَلَيْكُمْ السَّلاَمُ وَرَحْمَةُ اللهِوَبَرَكَاتُهُ")
                 cl.sendText(msg.to,"Wa'alaikumsallam.Wr,Wb")
             elif msg.text in ["Quote","quote","quotes","Quotes"]:
-                quote = ['Barangsiapa yang suka meninggalkan barang di tempat umum maka ia akan kehilangan barangnya tersebut\n\nQuote By Ari.','Kunci KESUKSESAN itu cuma satu, yakni lu harus BERHASIL.\n\nQuote By Ari.','Sebaik-baik orang memberi lebih baik ditabung\n\nQuote By Ari.','Lebih baik tangan diatas dari pada tangan di dalam celana\n\nQuote By Ari.','Pantang pulang sebelum goyang\n\nIni Bukan Quote.']
+                quote = ['Barangsiapa yang suka meninggalkan barang di tempat umum maka ia akan kehilangan barangnya tersebut\n\nQuote By Dika.','Kunci KESUKSESAN itu cuma satu, yakni lu harus BERHASIL.\n\nQuote By Dika.','Sebaik-baik orang memberi lebih baik ditabung\n\nQuote By Dika.','Lebih baik tangan diatas dari pada tangan di dalam celana\n\nQuote By Dika.','Pantang pulang sebelum goyang\n\nIni Bukan Quote.']
                 psn = random.choice(quote)
                 cl.sendText(msg.to,psn)
 #========================================
@@ -4795,35 +4795,35 @@ def bot(op):
                      kt.leaveGroup(msg.to)
                 except:
                      pass
-            elif msg.text in ["Y1 @bye","Y1 pulang","Y1 bye"]:
+            elif msg.text in ["d1 @bye","d1 pulang","d1 bye"]:
                 if msg.toType == 2:
                    X = cl.getGroup(msg.to)
                 try:
                      ki.leaveGroup(msg.to)
                 except:
                      pass
-            elif msg.text in ["Y2 @bye","Y2 pulang","Y2 bye"]:
+            elif msg.text in ["d2 @bye","d2 pulang","d2 bye"]:
                 if msg.toType == 2:
                    X = cl.getGroup(msg.to)
                 try:
                      kk.leaveGroup(msg.to)
                 except:
                      pass
-            elif msg.text in ["Y3 @bye","Y3 pulang","Y3 bye"]:
+            elif msg.text in ["d3 @bye","d3 pulang","d3 bye"]:
                 if msg.toType == 2:
                    X = cl.getGroup(msg.to)
                 try:
                      kc.leaveGroup(msg.to)
                 except:
                      pass
-            elif msg.text in ["Y4 @bye","Y4 pulang","Y4 bye"]:
+            elif msg.text in ["d4 @bye","d4 pulang","d4 bye"]:
                 if msg.toType == 2:
                    X = cl.getGroup(msg.to)
                 try:
                      kd.leaveGroup(msg.to)
                 except:
                      pass
-            elif msg.text in ["Y5 @bye","Y5 pulang","Y5 bye"]:
+            elif msg.text in ["d5 @bye","d5 pulang","d5 bye"]:
                 if msg.toType == 2:
                    X = cl.getGroup(msg.to)
                 try:
@@ -5309,7 +5309,7 @@ def bot(op):
                     msg.contentMetadata = {u'MENTION':json.dumps({"MENTIONEES":d})}
                     cl.sendMessage(msg)
 
-            elif msg.text in ["Y1tag","Y1 tag"]:
+            elif msg.text in ["d1tag","d1 tag"]:
                 if msg.toType == 2:
                     group = ki.getGroup(msg.to)
                     name = [contact.mid for contact in group.members]
